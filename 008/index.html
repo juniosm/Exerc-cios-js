@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>008</title>
+</head>
+
+<body>
+  <button onclick="clicou()">Clique aqui</button>
+  <p>Texto aqui</p>
+  <script>
+    function clicou() {
+      const frase = document.querySelector('p');
+      const num = Number(prompt('Qual o valor?'));
+
+      frase.innerHTML = `<p>O número a ser analisado aqui será o <strong>${num}</strong></p>
+      <p>O seu valor absoluto é ${Math.abs(num)}</p>
+      <p>A sua parte inteira é ${Math.trunc(num)}</p>
+      <p>O valor inteiro mais próximo é ${Math.round(num)}</p>
+      <p>A sua raiz quadrada é ${Math.sqrt(num)}</p>
+      <p>A sua raiz cúbica é ${Math.cbrt(num)}</p>
+      <p>O valor de ${(num)}<sup>2</sup> é ${Math.pow(num, 2)}</p>
+      <p>O valor de ${(num)}<sup>2</sup> é ${Math.pow(num, 3)}</p>`
+
+    }
+  </script>
+</body>
+
+
+</html>

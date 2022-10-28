@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>004</title>
+</head>
+
+<body>
+  <button onclick="clicou()">Clique aqui</button>
+  <p>Texto aqui</p>
+  <script>
+    function clicou() {
+      const frase = document.querySelector('p');
+      const nome = prompt('Qual o seu nome?');
+
+      frase.innerHTML = `<p>Olá <strong> ${nome}</strong>, é um prazer te conhecer! &#x1F596 </p>`;
+    }
+  </script>
+</body>
+
+</html>

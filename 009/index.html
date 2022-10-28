@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>009</title>
+</head>
+
+<body>
+  <button onclick="clicou()">Clique aqui</button>
+  <button onclick="clicouZerar()">Clique para zerar</button>
+  <p></p>
+  <script>
+    const frase = document.querySelector('p');
+    let cont = 0;
+
+    function clicou() {
+      frase.innerHTML = `<p>O contador está em ${cont += 1} cliques</p>`
+    }
+    function clicouZerar() {
+      frase.innerHTML = `<p></p>`
+    }
+  </script>
+</body>
+
+
+</html>

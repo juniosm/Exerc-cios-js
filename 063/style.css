@@ -1,0 +1,9 @@
+div {
+  border: 6px solid black;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  font-weight: 500;
+  font-size: 6rem;
+  text-align: center;
+}
